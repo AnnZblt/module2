@@ -1,5 +1,5 @@
 # BASE COMMANDS FOR GIT
-
+h2 Git lvl-1
 ***
 **git config --global user.name “AnnZblt”** #name/nickname
 
@@ -29,6 +29,8 @@
 
 **git diff --color-words** #changes colorizer
 
+**git log --oneline**  #посмотреть историю коммитов
+
 **git checkout filename.html/path to file** #backup file
 
 **git push** #push changes to origin
@@ -51,3 +53,50 @@
 **git branch -m | -M oldbranch newbranch** #m-move rename branch [more info](https://u.to/hqddHQ)
 
 **clear** # clear terminal
+
+
+h2 Gif lvl-2
+***
+**git pull --rebase** # Получение изменений с Github
+
+**git restore index.js** # Восстановление файла
+
+**git log # логи** # Восстановление файла
+
+**git log -p # логи с diff** # Восстановление файла
+
+***
+
+**git blame README.md** # Посмотреть коммиты файла
+
+**git grep строка** # Поиск подстроки в файлах
+
+**git reset** # Откатить изменения до коммита
+
+**git reset --hard HEAD~** # Откатить изменения до коммита
+
+**git commit --amend** # Дописать последний коммит
+***
+
+###Путешествия по коммитам
+
+**git checkout <хеш коммита>**
+
+**git checkout main # вернуться**
+
+**git stash** # убрать в stash
+
+**git stash pop** # достать из stash
+***
+
+###отменить коммит "ПЕРЕПИСЫВАЕТ ИСТОРИЮ"
+
+**git reset 'HASH commit'** # вернуться к коммиту старому но оставить текущие изменения
+
+**git reset --hard 'HASH commit'** # вернуться к коммиту и удалить все изменения
+
+**git checkout .** 
+
+**git checkout name.file** # откатить изменения в одном файле или каталоге
+
+**git commit -a -m** #сохраняет изменения отслеживаемых файлов и выполняет коммит
